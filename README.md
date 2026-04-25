@@ -34,7 +34,6 @@ The Black King starts on the eighth rank and only performs actions to remain the
 
 The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
 
-
 <p align="center">
 <img src="problem1_(second_task).png" width="30%"><br>
 <em>Goal Position</em>
@@ -47,6 +46,9 @@ Here, we consider that the Black King is entirely free in its actions as long as
 Although we average over the latent space, I doubt that this works in theory, as it may in some cases bring the Black King towards an edge but will not encourage the agent to place its pieces correctly with respect to the Black King’s position to checkmate. Failing to be able to train the agent to checkmate, it may be interesting to see if the agent learns the only technique to force the opposing king to move backward, namely the opposition of the kings followed by the check with the rook.
 
 <p align="center">
+<img src="problem2_(third_task).png" width="30%"><br>
+<em>Goal Position</em>
+</p>
 <img src="problem2_(third task).png" width="80%"><br>
 <b>Force the black king to the edge to checkmate it</b><br>
 </p>
