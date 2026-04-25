@@ -24,9 +24,11 @@ The Black King starts the episode at h1 and only performs actions that bring it 
 The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
 
 <p align="center">
-<b>Goal Position</b><br>
+Goal Position<br>
 <img src="problem0_(first_task).png" width="30%"><br>
 </p>
+
+<br>
 
 ### Second task and associated environment
 
@@ -35,9 +37,11 @@ The Black King starts on the eighth rank and only performs actions to remain the
 The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
 
 <p align="center">
-<img src="problem1_(second task).png" width="80%"><br>
 <b>Goal Position</b><br>
+<img src="problem1_(second task).png" width="30%"><br>
 </p>
+
+<br>
 
 ### Third task and associated environment
 
