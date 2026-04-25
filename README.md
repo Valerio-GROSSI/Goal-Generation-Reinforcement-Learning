@@ -44,7 +44,7 @@ The aim here is to force it to regularly return to square e8, where the objectiv
 
 Here, we consider that the Black King is entirely free in its actions as long as they are legal. Its actions are chosen randomly. The objective is to learn to the agent to checkmate the Black King. Since a specific position cannot be imposed, we average in the latent space over all possible checkmate positions (168 positions).
 
-I strongly doubt that this works in theory, and even if we succeed in pushing the Black King towards an edge, it will probably not encourage the agent to subsequently learn to position its pieces correctly relative to the Black King to achieve checkmate. Since we are most likely not able to train the agent to achieve checkmate, it may be interesting to investigate whether the agent learns the only technique that forces the opposing king to move backward and be driven to the edge, namely the opposition of the kings followed by a rook check.
+I strongly doubt that this works in theory, and even if we succeed in pushing the Black King towards an edge, it will probably not encourage the agent to subsequently learn to position its pieces correctly relative to the Black King to achieve checkmate. Since we are most likely not able to train the agent to achieve checkmate, it may be interesting to investigate whether the agent learns the only technique that forces the opposing king to move backward and then be inevitably driven to the edge, namely the opposition of the kings followed by a rook check.
 
 <p align="center">
 <img src="problem2_(third_task).png" width="30%"><br>
