@@ -30,7 +30,7 @@ The Black King starts on the eighth rank and only performs actions to remain the
 
 The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
 
-### Third task and associated environment Problem 2)
+### Third task and associated environment (Problem 2)
 
 Here, we consider that the Black King is entirely free in its actions as long as they are legal. Its actions are therefore chosen randomly. The objective is to learn to the agent to checkmate the Black King. Since a specific position cannot be imposed, we average in the latent space over all possible checkmate positions (168 positions).
 
