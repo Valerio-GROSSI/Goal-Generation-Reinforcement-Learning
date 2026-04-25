@@ -6,6 +6,7 @@ It focuses on learning latent representations of observations and training an ag
 
 Please refer to the PDF in the current directory for more detailed information about this project, and for running scrits, apply first the few modifications specified in the file modifs_gym_chess.
 
+<br>
 
 ## Agent Task
 
