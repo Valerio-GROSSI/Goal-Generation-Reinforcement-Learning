@@ -25,7 +25,7 @@ The idea is that the Black King remains overall in the same area of the chessboa
 
 <p align="center">
 <img src="problem0_(first_task).png" width="30%"><br>
-*Goal Position*
+<em>Goal Position</em>
 </p>
 
 <br>
