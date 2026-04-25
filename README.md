@@ -64,4 +64,4 @@ Using a latent space would make it possible to obtain achievable latent goals by
 
 Using a goal-conditioned policy would make it possible to train an agent for all types of tasks desired in the game of chess, depending on the phase of the game: succeeding in the opening, taking the center, putting its king to safety, promoting its pawns, checkmating in the endgame.
 
-I plan to revisit this project later with the goal of at least solving First Task, the simplest one presented.
+I plan to revisit this project later with the goal of at least solving First Task, and exploring the other tasks with simplified versions of chess.
