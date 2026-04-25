@@ -1,11 +1,13 @@
 # Goal Generation & Reinforcement Learning
 
-This project focuses on object detection and tracking in videos, with the goal of developing a pipeline to automate object detection, tracking, and evaluation in video streams.
+This project explores goal-conditioned reinforcement learning using the Reinforcement Learning with Imagined Goals (RIG) approach.  
+It focuses on learning latent representations of observations and training an agent to achieve diverse goals by sampling targets in a learned latent space.
 
-Given the wide variety of existing detection and tracking architectures, this project focuses on implementing the most commonly used approaches while maintaining a flexible framework that enables easy integration of new models.
+This project aims to implement the Reinforcement Learning with Imagined Goals (RIG) approach proposed by Nair et al. in 2018 (https://arxiv.org/abs/1807.04742), originally used for robotic tasks.
 
-Please refer to the PDF in the current directory for more detailed information about this project and instructions on how to run it.
-For the first run and setup, please refer to the instructions below.
+
+Please refer to the PDF in the current directory for more detailed information about this project, and for running apply the two modifications specified in the file modifs_gym_chess.
+
 
 <br>
 
