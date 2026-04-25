@@ -4,7 +4,7 @@ This project explores goal-conditioned reinforcement learning using the Reinforc
 
 It focuses on learning latent representations of observations and training an agent to achieve diverse goals by sampling targets in a learned latent space.
 
-Please refer to the PDF in the current directory for more detailed information about this project, and for running scrits, apply first the two modifications specified in the file modifs_gym_chess.
+Please refer to the PDF in the current directory for more detailed information about this project, and for running scrits, apply first the few modifications specified in the file modifs_gym_chess.
 
 
 ## Agent Task
