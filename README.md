@@ -49,6 +49,3 @@ Although we average over the latent space, I doubt that this works in theory, as
 <img src="problem2_(third_task).png" width="30%"><br>
 <em>Goal Position</em>
 </p>
-<img src="problem2_(third task).png" width="80%"><br>
-<b>Force the black king to the edge to checkmate it</b><br>
-</p>
