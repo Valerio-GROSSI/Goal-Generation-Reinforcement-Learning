@@ -55,7 +55,9 @@ I strongly doubt that this works in theory, and even if we succeed in pushing th
 
 ## Results
 
-The results can be viewed in the project’s `.mp4` files. As can be seen in the videos, the results obtained are not satisfactory. Although the training of the VAE and the policy, complex, did not succeed, this project was the opportunity to understand and put into practice the Reinforcement Learning method RIG.
+The results can be viewed in the project’s `.mp4` files. As can be seen in the videos, the results obtained are not satisfactory. In hindsight, reducing the size of the chessboard might have been a better initial approach, or allowing the Black side to skip its turn, except when in check, essentially, a much simpler version of chess.
+
+Although the training of the VAE and the policy, complex, did not succeed, this project was the opportunity to understand and put into practice the Reinforcement Learning method RIG.
 
 The two combined mechanisms of this method, the learning of a latent representation and the training of a policy compatible with diverse latent goals, may be promising for applications to the game of chess.
 Using a latent space would make it possible to obtain achievable latent goals by averaging over a set of positions that would be difficult to obtain individually.
