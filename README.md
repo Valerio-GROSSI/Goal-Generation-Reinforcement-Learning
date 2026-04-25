@@ -60,7 +60,7 @@ The results can be viewed in the project’s `.mp4` files. As can be seen in the
 Although the training of the VAE and the policy, complex, did not succeed, this project was the opportunity to understand and put into practice the Reinforcement Learning method RIG.
 
 The two combined mechanisms of this method, the learning of a latent representation and the training of a policy compatible with diverse latent goals, may be promising for applications to the game of chess.
-Using a latent space would make it possible to obtain achievable latent goals by averaging over a set of positions that would be difficult to obtain individually.
+Using a latent space would make it possible to obtain achievable latent goals by averaging over a set of positions that would be difficult to obtain individually (even impossible in our case).
 
 Using a goal-conditioned policy would make it possible to train an agent for all types of tasks desired in the game of chess, depending on the phase of the game: succeeding in the opening, taking the center, putting its king to safety, promoting its pawns, checkmating in the endgame.
 
