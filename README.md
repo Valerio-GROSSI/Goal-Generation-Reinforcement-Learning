@@ -24,8 +24,8 @@ The Black King starts the episode at h1 and only performs actions that bring it 
 The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
 
 <p align="center">
-Goal Position<br>
 <img src="problem0_(first_task).png" width="30%"><br>
+Goal Position
 </p>
 
 <br>
