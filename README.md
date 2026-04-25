@@ -17,20 +17,20 @@ A major constraint quickly appeared concerning the use of RIG (or any other meth
 
 From this observation, which applies regardless of the considered chess environment, I decided to drastically restrict the positions of the black king and to guide its actions. I thus considered three problems, leaving each more or less freedom to the Black King in the choice of its moves.
 
-### First task and associated environment (Problem 0)
+### First task and associated environment
 
 The Black King starts the episode at h1 and only performs actions that bring it closer (except when it finds itself there, being unable to pass over the Rook). The objective for the agent is to move its pieces in such a way as to reach the position White King at h8, White Rook at a8, and Black King at h1.
 
 The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
 
 
-### Second task and associated environment (Problem 1)
+### Second task and associated environment
 
 The Black King starts on the eighth rank and only performs actions to remain there; it may eventually move down to the seventh rank if it has no other choice, but attempts to return to the eighth rank as soon as possible. It scans the last rank from left to right and then, having arrived at the edge, changes direction.
 
 The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
 
-### Third task and associated environment (Problem 2)
+### Third task and associated environment
 
 Here, we consider that the Black King is entirely free in its actions as long as they are legal. Its actions are therefore chosen randomly. The objective is to learn to the agent to checkmate the Black King. Since a specific position cannot be imposed, we average in the latent space over all possible checkmate positions (168 positions).
 
