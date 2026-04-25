@@ -23,6 +23,10 @@ The Black King starts the episode at h1 and only performs actions that bring it 
 
 The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
 
+<p align="center">
+<img src="problem0_(first_task).png" width="80%"><br>
+<b>Goal Position</b><br>
+</p>
 
 ### Second task and associated environment
 
@@ -30,8 +34,18 @@ The Black King starts on the eighth rank and only performs actions to remain the
 
 The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
 
+<p align="center">
+<img src="problem1_(second task).png" width="80%"><br>
+<b>Goal Position</b><br>
+</p>
+
 ### Third task and associated environment
 
 Here, we consider that the Black King is entirely free in its actions as long as they are legal. Its actions are therefore chosen randomly. The objective is to learn to the agent to checkmate the Black King. Since a specific position cannot be imposed, we average in the latent space over all possible checkmate positions (168 positions).
 
 Although we average over the latent space, I doubt that this works in theory, as it may in some cases bring the Black King towards an edge but will not encourage the agent to place its pieces correctly with respect to the Black King’s position to checkmate. Failing to be able to train the agent to checkmate, it may be interesting to see if the agent learns the only technique to force the opposing king to move backward, namely the opposition of the kings followed by the check with the rook.
+
+<p align="center">
+<img src="problem2_(third task).png" width="80%"><br>
+<b>Force the black king to the edge to checkmate it</b><br>
+</p>
