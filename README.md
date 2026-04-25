@@ -22,7 +22,7 @@ From this observation, which applies regardless of the considered chess environm
 
 The Black King starts the episode at h1 and only performs actions that bring it closer (except when it is already there, and therefore inevitably moves away from it). The goal for the agent is to move its pieces in such a way as to reach the position White King at h8, White Rook at a8, and Black King at h1.
 
-The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
+The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from them.
 
 <p align="center">
 <img src="problem0_(first_task).png" width="30%"><br>
