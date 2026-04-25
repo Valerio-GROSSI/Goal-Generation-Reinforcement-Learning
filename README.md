@@ -28,20 +28,17 @@ The idea is that the Black King remains overall in the same area of the chessboa
 <em>Goal Position</em>
 </p>
 
-<br>
-
 ### Second task and associated environment
 
 The Black King starts on the eighth rank and only performs actions to remain there; it may eventually move down to the seventh rank if it has no other choice, but attempts to return to the eighth rank as soon as possible. It scans the last rank from left to right and then, having arrived at the edge, changes direction.
 
 The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
 
-<p align="center">
-<b>Goal Position</b><br>
-<img src="problem1_(second task).png" width="30%"><br>
-</p>
 
-<br>
+<p align="center">
+<img src="problem1_(second_task).png" width="30%"><br>
+<em>Goal Position</em>
+</p>
 
 ### Third task and associated environment
 
