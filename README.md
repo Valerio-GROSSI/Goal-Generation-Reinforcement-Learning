@@ -8,7 +8,7 @@ Please refer to the PDF in the current directory for more detailed information a
 
 <br>
 
-## Agent Task
+## Agent Tasks
 
 The objective of the chosen study is to generate positions of the chess game and to learn to the agent to achieve the requested configuration. The considered chess positions are those King and white Rook versus Black King, as well as King versus King.
 
@@ -50,3 +50,16 @@ Although we average over the latent space, I doubt that this works in theory, as
 <img src="problem2_(third_task).png" width="30%"><br>
 <em>Goal: Force the black king to the edge to checkmate it</em>
 </p>
+
+<br>
+
+## Results
+
+The results can be viewed in the project’s `.mp4` files. As can be seen in the videos, the results obtained are not satisfactory. Although the training of the VAE and the policy, complex, did not succeed, this project was the opportunity to understand and put into practice the Reinforcement Learning method RIG.
+
+The two combined mechanisms of this method, the learning of a latent representation and the training of a policy compatible with diverse latent goals, may be promising for applications to the game of chess.
+Using a latent space would make it possible to obtain achievable latent goals by averaging over a set of positions that would be difficult to obtain individually.
+
+Using a goal-conditioned policy would make it possible to train an agent for all types of tasks desired in the game of chess, depending on the phase of the game: succeeding in the opening, taking the center, putting its king to safety, promoting its pawns, checkmating in the endgame.
+
+I plan to revisit this project later with the goal of at least solving First Task, the simplest one presented.
