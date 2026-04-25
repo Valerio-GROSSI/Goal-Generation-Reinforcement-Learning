@@ -10,7 +10,7 @@ Please refer to the PDF in the current directory for more detailed information a
 
 ## Agent Tasks
 
-The objective of the chosen study is to generate positions of the chess game and to learn to the agent to achieve the requested configuration. The considered chess positions are those King and white Rook versus Black King, as well as King versus King.
+The objective of the chosen study is to generate positions of the chess game and to learn to the agent to achieve the requested configurations. The considered chess positions are those King and white Rook versus Black King, as well as King versus King.
 
 The objective is therefore to learn a latent representation of these positions using a generative model, then to learn to the agent (the Whites) to achieve these specific positions.
 
