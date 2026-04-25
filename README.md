@@ -17,4 +17,11 @@ A major constraint quickly appeared concerning the use of RIG (or any other meth
 
 From this observation, which applies regardless of the considered chess environment, I decided to drastically restrict the positions of the black king and to guide its actions. I thus considered three problems, leaving each more or less freedom to the Black King in the choice of its moves.
 
+### First task and associated environment
+
+The Black King starts the episode at h1 and only performs actions that bring it closer (except when it finds itself there, being unable to pass over the Rook). The objective for the agent is to move its pieces in such a way as to reach the position White King at h8, White Rook at a8, and Black King at h1.
+
+The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
+
+
 
