@@ -9,39 +9,45 @@ This project aims to implement the Reinforcement Learning with Imagined Goals (R
 Please refer to the PDF in the current directory for more detailed information about this project, and for running apply the two modifications specified in the file modifs_gym_chess.
 
 
-<br>
+As proposed in the subject "Scenario Generation and Reinforcement", the objective of the chosen study is to generate positions of the chess game and to learn to the agent to achieve the requested configuration. The considered chess positions are those King and white Rook versus Black King, as well as King versus King.
 
-## First Run
+The objective is therefore to learn a latent representation of these positions using a generative model, then to learn to the agent (the Whites) to achieve these specific positions.
 
-1. To have a python environment containing the expected libraries for running the scripts :
-```bash
-conda create -n name python=3.10
-conda activate name
-pip install -r requirements.txt
-```
+A major constraint quickly appeared concerning the use of RIG (or any other method) for the realization by an agent of chess positions. In the paper by Ashvin Nair and Vitchyr Pong, the algorithm is used on robotic tasks, for example moving with a robotic arm all kinds of different objects to certain positions. Contrary to the application framework of RIG by Ashvin Nair and Vitchyr Pong, the agent in the chess environment cannot force a specific position on the chessboard.
 
-2. Download MOT17 dataset, available with this command :
-```bash
-wget https://motchallenge.net/data/MOT17.zip
-unzip MOT17.zip -d MOT17
-rm -f MOT17.zip
-```
+From this observation, which applies regardless of the considered chess environment, I decided to drastically restrict the positions of the black king and to guide its actions. I thus considered three problems, leaving each more or less freedom to the Black King in the choice of its moves.
 
-3. Move MOT17 into Inputs folder :
-```bash
-mv MOT17 Inputs/
-```
 
-For a first run, just to understand and visualize outputs,
-keep only for example the MOT17-02 and MOT17-04 sequences in MOT17 folder 
-and delete all the other ones, otherwise the execution will be extremely long.
+### 3.2 Problems Addressed
 
-4. Execute the command :
-```bash
-python MOT_main.py --gen_det_images --gen_track_images --from_detections
-```
+**Problem 0:**
+
+The Black King starts the episode at h1 and only performs actions that bring it closer (except when it finds itself there, being unable to pass over the Rook). The objective for the agent is to move its pieces in such a way as to reach the position White King at h8, White Rook at a8, and Black King at h1.
+
+The idea is that the Black King remains overall in the same area of the chessboard regardless of the actions taken by the agent, and sufficiently far from the agent’s pieces so that the problem can be reduced to a simple positioning of pieces by the agent without considering external influences from the latter.
 
 <br>
+
+
+**Problem 1:**
+
+The Black King starts on the eighth rank and only performs actions to remain there; it may eventually move down to the seventh rank if it has no other choice, but attempts to return to the eighth rank as soon as possible. It scans the last rank from left to right and then, having arrived at the edge, changes direction.
+
+The aim here is to force it to regularly return to square e8, where the objective of checkmate with the White pieces will be tested, in the position White Rook at a8, White King at e6, and Black King at e8.
+
+
+
+**Problem 2:**
+
+Here, we consider that the Black King is entirely free in its actions as long as they are legal. Its actions are therefore chosen randomly. The objective is to learn to the agent to checkmate the Black King. Since a specific position cannot be imposed, we average in the latent space over all possible checkmate positions (168 positions).
+
+Although we average over the latent space, I doubt that this works in theory, as it may in some cases bring the Black King towards an edge but will not encourage the agent to place its pieces correctly with respect to the Black King’s position to checkmate. Failing to be able to train the agent to checkmate, it may be interesting to see if the agent learns the only technique to force the opposing king to move backward, namely the opposition of the kings followed by the check with the rook.
+
+*Objective Problem 2: Force the Black King against an edge*
+
+The agent has positioned its king and its rook so as to be able to push the Black King backward, here toward the left edge of the chessboard.
+
+
 
 ## Sample Results
 
