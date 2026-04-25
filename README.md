@@ -1,6 +1,6 @@
 # Goal Generation & Reinforcement Learning
 
-This project explores goal-conditioned reinforcement learning using the Reinforcement Learning with Imagined Goals (RIG) approach, proposed by Nair and al. in 2018 (https://arxiv.org/abs/1807.04742), originally used for robotic tasks.
+This project explores goal-conditioned reinforcement learning using the Reinforcement Learning with Imagined Goals (RIG) approach, proposed by Nair and al. in 2018 (https://arxiv.org/abs/1807.04742), originally demonstrated on robotic tasks.
 
 It focuses on learning latent representations of observations and training an agent to achieve diverse goals by sampling targets in a learned latent space.
 
